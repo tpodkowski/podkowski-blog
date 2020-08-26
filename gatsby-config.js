@@ -1,14 +1,19 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Blog by Tomasz Podkowski`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Tomasz Podkowski`,
+      summary: `frontend developer working in Poznań.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Blog by Tomasz Podkowski`,
+    siteUrl: `https://podkowski-blog.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `tpodkowski`,
+      linkedin: `tomasz-podkowski`,
     },
   },
   plugins: [
@@ -60,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Tomasz Podkowski Blog`,
+        short_name: `PodkowskiBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
